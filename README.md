@@ -39,7 +39,7 @@ Your task is to containerize this existing application using Docker. You need to
 ## Starting the Application
 
 - To build the docker image run the command:
-
+  docker build -t my-node-app .
 ```bash
 
 ```
@@ -92,3 +92,10 @@ docker-assignment/
 ```
 
 Good luck with your Docker containerization!
+
+# Reflection 
+Reflection Question
+
+Docker containers differ from virtual machines (VMs) in how they use system resources. Virtual machines run their own operating systems on virtualized hardware, while Docker containers share the host operating system's kernel and package the application with its dependencies. This makes containers generally smaller, faster to start, and more resource-efficient than VMs.
+
+A development team might choose Docker containers because they make applications easier to build, test, and deploy consistently across different environments. For example, the Node.js application I containerized can run with the same dependencies and configuration on a developer's computer, a testing server, or a production server. Docker also makes it easier to scale applications and manage deployments while reducing environment-related problems.
